@@ -118,6 +118,10 @@ ul {
     padding: 0px 0px 0px 24px;
 }
 
+li {
+    margin: 0px 0px 4px;
+}
+
 li::before {
     content: "* ";
     font-weight: bold;
