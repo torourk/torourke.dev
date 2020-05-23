@@ -1,0 +1,10 @@
+[site-settings]
+name = "torourk.com"
+output-dir = "docs"
+
+[page-settings]
+title = "Tiernan O'Rourke"
+header = "header.html"
+meta = "meta.html"
+css = ["style.css"]
+include = ["CNAME"]
