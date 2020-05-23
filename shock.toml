@@ -1,6 +1,5 @@
 [site-settings]
 name = "torourk.com"
-output-dir = "docs"
 
 [page-settings]
 title = "Tiernan O'Rourke"
