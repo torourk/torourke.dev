@@ -1,2 +1,3 @@
 [page-settings]
-include = ["me.jpg"]
+header = "headers/header-index.html"
+include = ["res/me.jpg"]

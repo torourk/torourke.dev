@@ -3,7 +3,6 @@ name = "torourk.com"
 
 [page-settings]
 title = "Tiernan O'Rourke"
-header = "header.html"
 meta = "meta.html"
 css = ["style.css"]
 include = ["CNAME"]
