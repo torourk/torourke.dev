@@ -43,10 +43,20 @@ header {
 
 header a {
     display: block;
+    text-decoration-line: none;
+    font-weight: bold;
 }
 header a:first-child {
     flex-basis: 100%;
     flex-shrink: 0;
+}
+header a:hover {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
+header a.selected {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
 }
 
 header .header-item {
@@ -100,16 +110,15 @@ h1 {
 }
 
 a {
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
+    text-decoration-line: underline;
     text-decoration-style: dashed;
 }
 
+a:hover {
+    text-decoration-style: solid;
+}
+
 a.selected {
-    text-decoration: underline;
     text-decoration-style: solid;
 }
 
@@ -118,12 +127,25 @@ ul {
     padding: 0px 0px 0px 24px;
 }
 
-li {
+ul p {
     margin: 0px 0px 4px;
 }
 
-li::before {
-    content: "* ";
+li {
+    margin: 0px 0px 4px;
+    list-style-type: "* ";
+}
+
+li::marker {
+    font-weight: bold;
+}
+
+li ul li {
+    margin: 4px 0px 0px;
+    list-style-type: "- ";
+}
+
+li ul li::marker {
     font-weight: bold;
 }
 
