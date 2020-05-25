@@ -42,7 +42,6 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
 
     padding: 8px 16px;
 
@@ -91,7 +90,6 @@ header .header-title {
 /* Footer styling */
 footer {
     margin-top: auto;
-    flex-shrink: 0;
 }
 
 footer > div {
@@ -108,7 +106,6 @@ hr {
 /* Article Styling */
 article {
     margin: 0px 32px 16px;
-    /* flex: 1 0 auto; */
 }
 
 section {
