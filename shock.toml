@@ -4,5 +4,6 @@ name = "torourke.dev"
 [page-settings]
 title = "Tiernan O'Rourke"
 meta = "meta.html"
+footer = "footers/footer.html"
 css = ["style.css"]
 include = ["CNAME"]
