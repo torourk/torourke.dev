@@ -3,6 +3,10 @@ html {
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -15,7 +19,6 @@ a {
 
 body {
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
 
     margin: 0;
@@ -38,6 +41,8 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
+    flex: none;
 
     padding: 8px 16px;
 
@@ -85,6 +90,7 @@ header .header-title {
 
 /* Footer styling */
 footer {
+    flex: none;
     margin-top: auto;
 }
 
@@ -101,6 +107,7 @@ hr {
 
 /* Article Styling */
 article {
+    flex: none;
     margin: 0px 32px 16px;
 }
 
