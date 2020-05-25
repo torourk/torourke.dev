@@ -90,8 +90,8 @@ header .header-title {
 
 /* Footer styling */
 footer {
-    margin-top: auto;
     flex: none;
+    margin-top: auto;
 }
 
 footer > div {
