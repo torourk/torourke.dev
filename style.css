@@ -90,7 +90,7 @@ header .header-title {
 
 /* Footer styling */
 footer {
-    /* margin-top: auto; */
+    margin-top: auto;
     flex-shrink: 0;
 }
 
@@ -108,7 +108,7 @@ hr {
 /* Article Styling */
 article {
     margin: 0px 32px 16px;
-    flex: 1 0 auto;
+    /* flex: 1 0 auto; */
 }
 
 section {
