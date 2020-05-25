@@ -3,6 +3,10 @@ html {
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -15,7 +19,7 @@ a {
 
 body {
     display: flex;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     flex-direction: column;
 
     margin: 0;
