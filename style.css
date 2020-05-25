@@ -19,7 +19,6 @@ a {
 
 body {
     display: flex;
-    /* min-height: 100vh; */
     flex-direction: column;
 
     margin: 0;
@@ -42,7 +41,8 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    /* flex-shrink: 0; */
+
+    flex: none;
 
     padding: 8px 16px;
 
@@ -91,7 +91,7 @@ header .header-title {
 /* Footer styling */
 footer {
     margin-top: auto;
-    /* flex-shrink: 0; */
+    flex: none;
 }
 
 footer > div {
@@ -107,6 +107,7 @@ hr {
 
 /* Article Styling */
 article {
+    flex: none;
     margin: 0px 32px 16px;
 }
 
