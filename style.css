@@ -14,6 +14,10 @@ a {
 }
 
 body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
     margin: 0;
 
     background: #fcfcf8;
@@ -77,6 +81,16 @@ header .header-title {
         flex-basis: auto;
         flex-shrink: 1;
     }
+}
+
+/* Footer styling */
+footer {
+    margin-top: auto;
+}
+
+footer > div {
+    margin: 0px 32px 16px;
+    color: #404040;
 }
 
 /* Paragraph Break */
