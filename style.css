@@ -42,7 +42,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex: none;
+    flex-shrink: 0;
 
     padding: 8px 16px;
 
@@ -91,7 +91,7 @@ header .header-title {
 /* Footer styling */
 footer {
     /* margin-top: auto; */
-    flex: none;
+    flex-shrink: 0;
 }
 
 footer > div {
