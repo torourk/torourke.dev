@@ -1,33 +1,66 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html>
+
 <head>
-    <title>Tiernan O'Rourke</title>
+    <title>Tiernan O&#39;Rourke</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
-<header>
-    <a href="https://torourke.dev" class="selected">
-        <div class="header-title header-item">Tiernan O'Rourke</div>
-    </a>
-    <a href="https://torourke.dev/projects.html">
-        <div class="header-item">Projects</div>
-    </a>
-    <a href="https://torourke.dev/about.html">
-        <div class="header-item">About</div>
-    </a>
-</header>
-<hr><article>
-<section>
-<img src="me.jpg" class="floating-img my-picture" />
-<h1>Hello There</h1>
-<p>Welcome to my personal website.</p>
-</section>
-</article>
-<footer>
-    <hr>
-</footer>
+    <header class="header">
+        <div class="header__items">
+            <a href="/" class="header__title">
+                torourke.dev
+            </a>
+            <a href="/about" class="header__page">
+                About
+            </a>
+            <a href="/projects" class="header__page">
+                Projects
+            </a>
+        </div>
+        <hr class="header__border" />
+    </header>
+
+    <main class="main">
+        
+<div style="padding: 1em 2em; height: 100%; display: flex; flex-direction: column;">
+
+    <div style="flex-basis: 35%;"></div>
+
+    <div style="display: flex;">
+        <div style="flex-basis: 33%;"></div>
+
+        <div style="flex-shrink: 0; min-width: 0; max-width: 100%;">
+            <h1 style="margin-top: 0.25em; font-size: 3em;">
+                Hello.<br>I'm Tiernan O'Rourke.
+            </h1>
+            <p style="font-size: 1.5em; margin-left: 0.5em;">
+                <a href="/about">About me.</a>
+            </p>
+        </div>
+
+        <div style="flex-basis: 67%;"></div>
+    </div>
+
+    <div style="flex-basis: 65%;"></div>
+
+</div>
+    </main>
+
+    <footer class="footer">
+        <hr class="footer__border" />
+        <div class="footer__copyright">&#169 2020-2022 Tiernan O'Rourke</div>
+    </footer>
 </body>
+
 </html>

@@ -1,34 +1,36 @@
-/* Border box by default */
+
+/* Border box by default. */
 html {
     box-sizing: border-box;
-    -webkit-text-size-adjust: 100%;
-}
-
-html, body {
-    height: 100%;
 }
 
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
-/* Disable link decorations */
-a {
-    color: black;
-    text-decoration: none;
+/* html and body settings. */
+html {
+    background: #fcfcf8;
+    font-family: 'Roboto', sans-serif;
+
+    line-height: 1.5;
+
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+html, body {
+    height: 100%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-
     margin: 0;
 
-    background: #fcfcf8;
-    font-family: 'Inconsolata', monospace;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Body desktop modifications */
+/* Body desktop modifications. */
 @media screen and (min-width: 768px) {
     body {
         margin: auto;
@@ -36,104 +38,47 @@ body {
     }
 }
 
-/* Header styling */
-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-    flex: none;
-
-    padding: 8px 16px;
-
-    font-size: 1.2em;
-    text-align: center;
-}
-
-header a {
-    display: block;
-    text-decoration-line: none;
-    font-weight: bold;
-}
-header a:first-child {
-    flex-basis: 100%;
-    flex-shrink: 0;
-}
-header a:hover {
-    text-decoration-line: underline;
-    text-decoration-style: dashed;
-}
-header a.selected {
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-}
-
-header .header-item {
-    padding: 8px 16px;
-}
-
-header .header-title {
-    font-size: 1.3em;
-}
-
-/* Header desktop modifications */
-@media screen and (min-width: 768px) {
-    header {
-        justify-content: start;
-    }
-
-    header a:first-child {
-        flex-basis: auto;
-        flex-shrink: 1;
-    }
-}
-
-/* Footer styling */
-footer {
-    flex: none;
-    margin-top: auto;
-}
-
-footer > div {
-    margin: 0px 32px 16px;
-    color: #404040;
-}
-
-/* Paragraph Break */
+/* Horizontal rule. */
 hr {
+    margin: 0.5em 0;
+
     border: 1px solid black;
-    margin: 0px 16px 16px;
 }
 
-/* Article Styling */
-article {
-    flex: none;
-    margin: 0px 32px 16px;
-}
+/* Headers and text. */
 
-section {
-    margin: 0px 0px 8px;
-}
-section::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-h1, p, ul {
-    margin: 0px 0px 8px;
+h1, h2 {
+    font-family: 'Inconsolata', monospace;
+    font-style: italic;
 }
 
 h1 {
-    font-style: italic;
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: 1.2em;
+    font-weight: 800;
 }
 
-a {
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0.5em 0 0.25em 0;
+
+    line-height: 1.2;
+}
+
+p {
+    margin: 0 0 0.5em 0;
+}
+
+/* Underlines. */
+h1, h2, h3, a {
     text-decoration-line: underline;
+
+    text-decoration-thickness: 0.05em;
+    text-underline-offset: 0.1em;
+}
+
+/* Links. */
+a {
+    color: black;
+    font-weight: bold;
     text-decoration-style: dashed;
 }
 
@@ -141,57 +86,203 @@ a:hover {
     text-decoration-style: solid;
 }
 
-a.selected {
-    text-decoration-style: solid;
-}
-
+/* Lists. */
 ul {
+    margin: 0 0 0.5em 0;
+    padding: 0 0 0 1.5em;
+
     list-style: none;
-    padding: 0px 0px 0px 24px;
 }
 
-ul p {
-    margin: 0px 0px 4px;
-}
+ul > li {
+    margin: 0 0 0.25em 0;
 
-li {
-    margin: 0px 0px 4px;
     list-style-type: "* ";
 }
 
-li::marker {
+ul > li::marker {
+    font-family: 'Inconsolata', monospace;
     font-weight: bold;
 }
 
-li ul li {
-    margin: 4px 0px 0px;
+li > p {
+    margin: 0 0 0.25em 0;
+}
+
+li > ul {
+    margin: 0 0 0.25em 0;
+}
+
+li > ul > li {
+    margin: 0.25em 0 0 0;
+
     list-style-type: "- ";
 }
 
-li ul li::marker {
-    font-weight: bold;
-}
-
+/* Images. */
 img {
     display: block;
-    margin: 0px auto 16px;
+    margin: 16px auto;
     box-shadow: 2px 2px 2px black;
+
+    width: auto;
+    height: auto;
+
+    max-width: 50%;
+    max-height: 50vh;
+
+    image-rendering: -webkit-optimize-contrast;
 }
 
-/* My Picture */
-img.my-picture {
-    width: 70%;
-    max-width: 250px;
-}
-
-/* My Picture desktop modifications */
+/* Floating. */
 @media screen and (min-width: 768px) {
-    img.floating-img {
+    .float-right {
+        margin: 8px 0px 8px 16px;
         float: right;
-        margin: 0px 0px 8px 8px;
+
+        max-width: 30%;
     }
 
-    img.my-picture {
-        width: 35%;
+    .float-left {
+        margin: 8px 16px 8px 0px;
+        float: left;
+
+        max-width: 30%;
     }
+
+    /* Clearfix. */
+    .clearfix {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+/* Dark mode. */
+@media (prefers-color-scheme: dark) {
+    html {
+        background: #121212;
+        color: #dddddd;
+    }
+
+    a {
+        color: #dddddd;
+    }
+
+    hr {
+        border-color: #999999;
+    }
+}
+/* Header styling. */
+.header {
+    margin: 0 1em;
+
+    font-family: 'Inconsolata', monospace;
+    line-height: 1.1;
+}
+
+.header__items {
+    margin: 1em;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+    gap: 0.75em 2em;
+}
+
+.header__title {
+    flex-basis: 100%;
+    flex-shrink: 0;
+
+    font-size: 1.5em;
+    text-align: center;
+
+    text-decoration-line: none;
+}
+
+.header__title:hover {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
+
+.header__title--selected {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+.header__title:hover.header__title--selected {
+    text-decoration-style: solid;
+}
+
+.header__page {
+    font-size: 1.25em;
+
+    text-decoration-line: none;
+}
+
+.header__page:hover {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
+
+.header__page--selected {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+.header__page:hover.header__page--selected {
+    text-decoration-style: solid;
+}
+
+.header__border {
+    margin: 0;
+}
+
+/* Header desktop modifications */
+@media screen and (min-width: 768px) {
+    .header__items {
+        justify-content: start;
+    }
+
+    .header__title {
+        flex-basis: auto;
+
+        text-align: start;
+    }
+}
+/* Footer styling. */
+.footer {
+    margin: 0 1em;
+
+    font-family: 'Inconsolata', monospace;
+    line-height: 1.1;
+}
+
+.footer__border {
+    margin: 0;
+}
+
+.footer__copyright {
+    margin: 1em;
+
+    color: #404040;
+
+    text-align: center;
+}
+
+/* Dark mode. */
+@media (prefers-color-scheme: dark) {
+    .footer__copyright {
+        color: #dddddd;
+    }
+}
+/* Main styling */
+main {
+    flex-grow: 1;
+}
+
+.main__content {
+    margin: 16px 32px;
 }
