@@ -1,0 +1,26 @@
+/* Footer styling. */
+.footer {
+    margin: 0 1em;
+
+    font-family: 'Inconsolata', monospace;
+    line-height: 1.1;
+}
+
+.footer__border {
+    margin: 0;
+}
+
+.footer__copyright {
+    margin: 1em;
+
+    color: #404040;
+
+    text-align: center;
+}
+
+/* Dark mode. */
+@media (prefers-color-scheme: dark) {
+    .footer__copyright {
+        color: #dddddd;
+    }
+}

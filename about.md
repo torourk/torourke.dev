@@ -1,21 +1,17 @@
-<article>
-<section>
+---
+layout: layout-content.njk
+---
 
 # About Me:
 
+<img src="/img/about/me.jpg" class="float-right" />
+
 My name is Tiernan O'Rourke.
-I recently graduated from George Mason University with a BS in Computer Science and a minor in Mathematics.
+I'm currently a software engineer primarily using C, C++, and Java as well as Rust for hobby projects.
 
-I am interested in computer security and cryptography as well as backend web development.
+I enjoy spending time learning more about frontend/backend web development, web application security practices, computer graphics programming, and video game console emulation.
 
-</section>
-<section>
-
-# Links
+## Links
 
 * LinkedIn: [@tiernan-orourke](https://linkedin.com/in/tiernan-orourke)
 * Github: [@torourk](https://github.com/torourk)
-
-</section>
-</article>
-

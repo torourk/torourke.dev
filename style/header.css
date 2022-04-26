@@ -1,0 +1,79 @@
+/* Header styling. */
+.header {
+    margin: 0 1em;
+
+    font-family: 'Inconsolata', monospace;
+    line-height: 1.1;
+}
+
+.header__items {
+    margin: 1em;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+    gap: 0.75em 2em;
+}
+
+.header__title {
+    flex-basis: 100%;
+    flex-shrink: 0;
+
+    font-size: 1.5em;
+    text-align: center;
+
+    text-decoration-line: none;
+}
+
+.header__title:hover {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
+
+.header__title--selected {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+.header__title:hover.header__title--selected {
+    text-decoration-style: solid;
+}
+
+.header__page {
+    font-size: 1.25em;
+
+    text-decoration-line: none;
+}
+
+.header__page:hover {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
+
+.header__page--selected {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+.header__page:hover.header__page--selected {
+    text-decoration-style: solid;
+}
+
+.header__border {
+    margin: 0;
+}
+
+/* Header desktop modifications */
+@media screen and (min-width: 768px) {
+    .header__items {
+        justify-content: start;
+    }
+
+    .header__title {
+        flex-basis: auto;
+
+        text-align: start;
+    }
+}
