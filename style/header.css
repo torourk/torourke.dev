@@ -1,9 +1,30 @@
 /* Header styling. */
 .header {
     margin: 0 1em;
+    position: relative;
 
     font-family: 'Inconsolata', monospace;
     line-height: 1.1;
+}
+
+.header__dark-mode-toggle-container {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    right: 0.5em;
+
+    align-items: center;
+}
+
+.header__dark-mode-toggle {
+    font-size: 1.25em;
+    opacity: 75%;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 2px black);
+}
+
+.header__dark-mode-toggle:before {
+    content: "🌙";
 }
 
 .header__items {
@@ -17,9 +38,15 @@
     gap: 0.75em 2em;
 }
 
-.header__title {
+.header__title-container {
     flex-basis: 100%;
     flex-shrink: 0;
+}
+
+.header__title {
+    margin: auto;
+    display: block;
+    width: fit-content;
 
     font-size: 1.5em;
     text-align: center;
@@ -71,9 +98,24 @@
         justify-content: start;
     }
 
-    .header__title {
+    .header__title-container {
         flex-basis: auto;
+    }
+
+    .header__title {
+        margin: 0;
+        display: inline;
+        width: auto;
 
         text-align: start;
     }
+}
+
+/* Dark mode. */
+.dark-mode .header__dark-mode-toggle {
+    filter: none;
+}
+
+.dark-mode .header__dark-mode-toggle:before {
+    content: "☀️";
 }

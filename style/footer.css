@@ -19,8 +19,6 @@
 }
 
 /* Dark mode. */
-@media (prefers-color-scheme: dark) {
-    .footer__copyright {
-        color: #dddddd;
-    }
+.dark-mode .footer__copyright {
+    color: #dddddd;
 }

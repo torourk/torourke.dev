@@ -158,17 +158,15 @@ img {
 }
 
 /* Dark mode. */
-@media (prefers-color-scheme: dark) {
-    html {
-        background: #121212;
-        color: #dddddd;
-    }
+html.dark-mode {
+    background: #121212;
+    color: #dddddd;
+}
 
-    a {
-        color: #dddddd;
-    }
+.dark-mode a {
+    color: #dddddd;
+}
 
-    hr {
-        border-color: #999999;
-    }
+.dark-mode hr {
+    border-color: #999999;
 }

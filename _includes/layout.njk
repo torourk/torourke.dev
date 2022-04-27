@@ -9,6 +9,7 @@ title: Tiernan O'Rourke
     <title>{{ title }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fcfcf8">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,14 +17,20 @@ title: Tiernan O'Rourke
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 
     <link rel="stylesheet" href="/style.css">
+    <script src="/js/head.js"></script>
 </head>
 
 <body>
     <header class="header">
+        <div class="header__dark-mode-toggle-container">
+            <div class="header__dark-mode-toggle" onclick="toggleDarkMode();"></div>
+        </div>
         <div class="header__items">
-            <a href="/" class="header__title">
-                torourke.dev
-            </a>
+            <div class="header__title-container">
+                <a href="/" class="header__title">
+                    torourke.dev
+                </a>
+            </div>
             <a href="/about" class="header__page">
                 About
             </a>
