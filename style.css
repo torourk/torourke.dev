@@ -11,12 +11,16 @@ html {
 /* html and body settings. */
 html {
     background: #fcfcf8;
+    color: #000000;
+
     font-family: 'Roboto', sans-serif;
 
     line-height: 1.5;
 
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
+
+    transition: background 0.2s;
 }
 
 html, body {
@@ -70,6 +74,7 @@ p {
 /* Underlines. */
 h1, h2, h3, a {
     text-decoration-line: underline;
+    text-decoration-color: #000000;
 
     text-decoration-thickness: 0.05em;
     text-underline-offset: 0.1em;
@@ -162,6 +167,10 @@ img {
 html.dark-mode {
     background: #121212;
     color: #dddddd;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode a {
+    text-decoration-color: #dddddd;
 }
 
 .dark-mode a {
