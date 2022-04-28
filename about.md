@@ -1,5 +1,6 @@
 ---
 layout: layout-content.njk
+navKey: about
 ---
 
 # About Me:

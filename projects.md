@@ -1,5 +1,6 @@
 ---
 layout: layout-content.njk
+navKey: projects
 ---
 
 # Stuff I've Made:
