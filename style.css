@@ -20,7 +20,7 @@ html {
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
 
-    transition: background 0.2s;
+    transition: background-color 0.2s;
 }
 
 html, body {
