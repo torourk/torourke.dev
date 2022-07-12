@@ -1,0 +1,17 @@
+<div class="header__dark-mode-toggle-container">
+    <div class="header__dark-mode-toggle" onclick="toggleDarkMode();"></div>
+</div>
+<div class="header__items">
+    <div class="header__title-container">
+        <a href="/" class="header__title {% if navKey == "index" %} header__title--selected {% endif %}">
+            torourke.dev
+        </a>
+    </div>
+    <a href="/about" class="header__page {% if navKey == "about" %} header__page--selected {% endif %}">
+        About
+    </a>
+    <a href="/projects" class="header__page {% if navKey == "projects" %} header__page--selected {% endif %}">
+        Projects
+    </a>
+</div>
+<hr class="header__border" />
